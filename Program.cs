@@ -10,7 +10,7 @@ namespace SORepro
     {
         static void Main(string[] args)
         {
-            var page = new { ClientQueryString = "thing" } as dynamic;
+            var page = new { ClientQueryString = "thing" };
 
             if (page != null && TryGetURLParams(page.ClientQueryString, out string stringOne))
             {
